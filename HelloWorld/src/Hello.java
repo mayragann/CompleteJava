@@ -1,5 +1,5 @@
 public class Hello {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println("Hello, Person");
 
         boolean isAlwaysLearning = true;
@@ -22,6 +22,7 @@ public class Hello {
             System.out.println("Either or both of the conditions are true");
         }
 */
+/*
 
         int newValue = 50;
         if (newValue == 50){
@@ -41,10 +42,24 @@ public class Hello {
 
         String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
         System.out.println(s);
-        
+
         int ageOfClient = 16;
         String ageText = (ageOfClient >= 18) ? "Over Eighteen" : "Still a kid";
         System.out.println("Our Client is " + ageOfClient);
+*/
+
+        double firstValue = 20.00D;
+        double secondValue = 80.00D;
+        double myTotalValue = (firstValue + secondValue) * 100.00;
+        double result = myTotalValue % 40.00;
+        boolean finalResult = (result == 0) ? true : false;
+        System.out.println(finalResult);
+        if(!finalResult){
+            System.out.println("got some remainder");
+        }
+        else{
+            System.out.println("It's a perfect 0.00");
+        }
     }
 
 }
