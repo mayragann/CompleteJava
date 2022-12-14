@@ -1,6 +1,6 @@
 public class HighScoreChallenge {
     public static void main(String[] args) {
-        int newScore = calculateHighScores(1500);
+        int newScore = calculateHighScores(2500);
         displayName("Tim", newScore);
 
         newScore = calculateHighScores(500);
@@ -16,17 +16,16 @@ public class HighScoreChallenge {
 
     public static int calculateHighScores(int highScore){
         int finalScore = highScore;
+        int position = 4;
 
         if(finalScore >= 2000){
-            return 1;
-        } else if (finalScore >= 1000 && finalScore < 2000) {
-            return 2;
-        } else if (finalScore >= 500 && finalScore < 1000) {
-            return 3;
+            position = 1;
+        } else if (finalScore >= 1000) {
+            position = 2;
+        } else if (finalScore >= 500) {
+            position = 3;
         }
-        else{
-            return 4;
-        }
+        return position;
 
     }
 }
